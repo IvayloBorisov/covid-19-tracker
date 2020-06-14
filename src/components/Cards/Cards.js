@@ -5,10 +5,9 @@ import cx from 'classname';
 import styles from './Cards.module.css';
 
 const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate } } ) => {
-
    
     if(!confirmed) {
-        return <h1>Loading ...</h1>;
+        return <h1>LOADING ...</h1>;
     }
     return(
         <div className={ styles.container }>

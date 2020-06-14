@@ -44,9 +44,9 @@ export const fetchCountriesData = async() => {
 
 export const getCountryData = async (country) => {
    try {
-       const { data: { confirmed, recovered, deaths } } = await axios.get(`${ BASE_URL }/countries/${ country }`);
+       const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(`${ BASE_URL }/countries/${ country }`);
 
-       return { confirmed, recovered, deaths };
+       return { confirmed, recovered, deaths, lastUpdate };
 
    } catch (error) {
        

@@ -1,5 +1,6 @@
 body {
     background-color: rgb(250, 250, 250);
+    
 }
 
 .container {
@@ -7,4 +8,5 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2em;
 }

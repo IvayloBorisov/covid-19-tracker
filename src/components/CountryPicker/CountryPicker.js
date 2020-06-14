@@ -15,12 +15,14 @@ const CountryPicker = ({ handleChange }) => {
     }, [ setCountry ]);
 
     return(
+        countriesName.length ? 
        <FormControl className={ styles.container }>
         <NativeSelect defaultValue="" onChange={ event => handleChange(event.target.value) }>
          <option value="">Global</option>
           { countriesName.map((name, index) => <option key={ index } value={ name }>{ name }</option>) }
         </NativeSelect>
        </FormControl>
+       : null
     )
 }
 

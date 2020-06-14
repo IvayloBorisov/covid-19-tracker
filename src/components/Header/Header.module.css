@@ -1,7 +1,11 @@
 .container {
+    display: flex;
     width: 80%;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .image {
-   width: 100%;
+   width: 65%;
 }
